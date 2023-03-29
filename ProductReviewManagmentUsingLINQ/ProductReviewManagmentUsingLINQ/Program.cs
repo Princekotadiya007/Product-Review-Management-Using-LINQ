@@ -45,7 +45,7 @@ namespace ProductReviewManagmentUsingLINQ
             while (flag)
             {
                 Console.WriteLine("Enter an option");
-                Console.WriteLine("1.Add Product Review \n2.Display Product Review");
+                Console.WriteLine("1.Add Product Review \n2.Display Product Review \n3.Rritevive Top3Record");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -54,6 +54,9 @@ namespace ProductReviewManagmentUsingLINQ
                         break;
                     case 2:
                         management.DisplayProductReview(list);
+                        break;
+                    case 3:
+                        management.RriteviveTop3Record(list);
                         break;
                 }
             }
