@@ -58,6 +58,9 @@ namespace ProductReviewManagmentUsingLINQ
                     case 3:
                         management.RriteviveTop3Record(list);
                         break;
+                    case 4:
+                        management.RetriveRecordBasedOnProductIdAndRating(list);
+                        break;
                 }
             }
 
